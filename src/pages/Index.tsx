@@ -84,12 +84,12 @@ const Index = () => {
             initial="initial"
             animate="animate"
           >
-            <motion.img
-              src="public/logo.png"
-              className="inline size-24 md:size-32"
-              variants={bounceIn}
-              {...floatAnimation}
-            />
+            <motion.div variants={bounceIn} {...floatAnimation}>
+              <img
+                src="public/logo.png"
+                className="inline size-24 md:size-32"
+              />
+            </motion.div>
             <motion.h1
               className="text-justify md:text-center text-3xl md:text-5xl max-w-xl mx-auto font-bold text-black mb-6 tracking-wider"
               variants={fadeInUp}
