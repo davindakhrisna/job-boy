@@ -85,10 +85,21 @@ const Index = () => {
             animate="animate"
           >
             <motion.div variants={bounceIn} {...floatAnimation}>
-              <img
-                src="public/logo.png"
+              <img src="public/logo.png" />
+              <svg
+                width="112"
+                height="112"
+                viewBox="0 0 112 112"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
                 className="inline size-24 md:size-32"
-              />
+              >
+                <rect width="112" height="112" rx="19" fill="#FFBB00" />
+                <path
+                  d="M50 81V65H23V90C23 92.2091 21.2091 94 19 94C16.7909 94 15 92.2091 15 90V57H50V44H19V36H50V18H58V36H97V44H58V57H97V74H89V65H58V81C58 83.2091 56.2091 85 54 85C51.7909 85 50 83.2091 50 81Z"
+                  fill="black"
+                />
+              </svg>
             </motion.div>
             <motion.h1
               className="text-justify md:text-center text-3xl md:text-5xl max-w-xl mx-auto font-bold text-black mb-6 tracking-wider"
