@@ -234,7 +234,7 @@ const Results = () => {
           <Button
             size="lg"
             onClick={() => navigate("/")}
-            className="bg-yellow-400 text-white"
+            className="bg-yellow-400 text-white hober:bg-yellow-500"
           >
             Ambil Penilaian Lagi
           </Button>
