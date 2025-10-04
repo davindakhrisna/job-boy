@@ -85,7 +85,6 @@ const Index = () => {
             animate="animate"
           >
             <motion.div variants={bounceIn} {...floatAnimation}>
-              <img src="public/logo.png" />
               <svg
                 width="112"
                 height="112"
