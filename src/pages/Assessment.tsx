@@ -105,10 +105,11 @@ const Assessment = () => {
       const { data, error } = await supabase.functions.invoke(
         "analyze-personality",
         {
-          body: { 
+          body: {
             answers: formattedAnswers,
             language: "Indonesian",
-            instructions: "Please respond entirely in Indonesian language. All personality analysis, career recommendations, descriptions, and insights should be written in Indonesian (Bahasa Indonesia)."
+            instructions:
+              "Please respond entirely in Indonesian language. All personality analysis, career recommendations, descriptions, and insights should be written in Indonesian (Bahasa Indonesia).",
           },
         },
       );
@@ -130,7 +131,7 @@ const Assessment = () => {
   };
 
   return (
-    <div className="min-h-screen bg-yellow-100 py-12 px-4">
+    <div className="min-h-screen flex flex-col justify-center bg-yellow-100 py-12 px-4">
       <div className="max-w-3xl mx-auto">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-foreground mb-2">
